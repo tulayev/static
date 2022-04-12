@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Аниме сайт</title>
+    <link rel="stylesheet" href="assets/css/tailwind.css" />
+</head>
+
+<body class="bg-gray-900 text-white">
+    <header class="border-b border-gray-800">
+        <nav class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 py-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <a href="index.html">
+                    <img src="assets/images/logo.svg" alt="Logo" class="w-20 flex-none">
+                </a>
+
+                <ul class="flex ml-0 lg:ml-16 space-x-8 mt-6 lg:mt-0">
+                    <li>
+                        <a href="#" class="hover:text-gray-400">Аниме</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-400">Популярные</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:text-gray-400">Скоро</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="flex items-center mt-6 lg:mt-0">
+                
+                <div class="relative">
+                    <input
+                        type="text"
+                        class="bg-gray-800 text-sm rounded-full focus:outline-none focus:shadow-outline w-64 px-3 pl-8 py-1"
+                        placeholder="Поиск..."
+                    />
+                
+                    <div class="absolute top-0 flex items-center h-full ml-2">
+                        <img src="assets/images/lupa.svg" alt="Lupa" class="w-4">
+                    </div>
+                
+                    <div class="absolute z-50 bg-gray-800 text-sm rounded w-64 mt-2">
+                        <ul>
+                            <li class="border-b border-gray-700">
+                                <a href="#" class="block hover:bg-gray-700 flex items-center transition ease-in-out duration-150 px-3 py-3">
+                                    <img src="https://cdn.myanimelist.net/images/anime/1079/109928.jpg?s=33c1c9c33504d732712ca3e1ebcafc7a" alt="cover" class="w-10">
+                                    <span class="ml-4">Название аниме из поискового дропдовна</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="ml-6">
+                    <a href="#">
+                        <img src="assets/images/avatar.png" alt="avatar" class="rounded-full w-8">
+                    </a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="py-8">
+
+        <div class="container mx-auto px-4">
+            <div class="anime-details border-b border-gray-800 pb-12 flex flex-col lg:flex-row">
+                <div class="flex-none">
+                    <img 
+                        src="assets/images/naruto.jpg" 
+                        alt="cover" 
+                    />
+                </div>
+                <div class="ml-12 mr-64">
+                    <h2 class="font-bold text-6xl leading-tight mt-1">
+                        Naruto Shippuuden
+                    </h2>
+                    <div class="text-gray-400">
+                        <span>Жанры (боевик, драма...)</span>
+                        &middot;
+                        <span>Тип (TV, Movie, OVA...)</span>
+                        &middot;
+                        <span>Студия (MadHouse, Pierrot...)</span>
+                    </div>
+    
+                    <p class="mt-12">
+                       Описание аниме
+                    </p>
+    
+                    <div class="mt-12">
+                        <a href="#" class="inline-flex bg-blue-500 text-white font-semibold px-4 py-4 hover:bg-blue-600 rounded transition ease-in-out duration-150">
+                            <img src="assets/images/play.svg" alt="Play Button" />
+                            <span class="ml-2">Посмотреть трейлер</span>
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- end anime details -->
+    
+            <div class="images-container border-b border-gray-800 pb-12 mt-8">
+                <h2 class="text-blue-500 uppercase .tracking-wide font-semibold">
+                    Скриншоты
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mt-8">
+                    <div>
+                        <a href="#">
+                            <img 
+                                src="assets/images/naruto-screenshot.png" 
+                                alt="screenshot" 
+                                class="hover:opacity-75 transition ease-in-out duration-150"
+                            />
+                        </a>
+                    </div>
+
+                    <div>
+                        <a href="#">
+                            <img 
+                                src="assets/images/naruto-screenshot.png" 
+                                alt="screenshot" 
+                                class="hover:opacity-75 transition ease-in-out duration-150"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </div> <!-- end images container -->
+    
+            <div class="more-info-container mt-8">
+                <h2 class="text-blue-500 uppercase tracking-wide font-semibold mb-3">Дополнительная информация</h2>
+                <div class="text-sm">
+                    <br />
+                    <br />
+                    Количество серий: 500
+                </div>
+            </div> <!-- end more info -->
+        </div>
+
+    </main>
+
+    <footer class="border-t border-gray-800">
+        <div class="container mx-auto px-4 py-6">
+            Powered By
+            <a href="https://jikan.moe/" class="underline hover:text-gray-400" target="_blank">Jikan API</a>
+        </div>
+    </footer>
+
+    <script src=""></script>
+</body>
+</html>
