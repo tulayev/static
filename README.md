@@ -1,3 +1,3 @@
-# Starter Template
+# Static html, css
 
-A starter template with UIkit frontend framework and tailwindcss JIT configured
+Just for fun ;)
